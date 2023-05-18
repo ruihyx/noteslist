@@ -1,0 +1,12 @@
+<!-- <p>note works!</p> -->
+<div class="container">
+<div class="notedetails" *ngIf="selectedNote">
+    <input placeholder="title"   [(ngModel)]="selectedNote.title" (input)="onInputChange() ">
+    <textarea placeholder="content" [(ngModel)]="selectedNote.content" (input)="onInputChange()"></textarea>
+</div>
+<div class="button">
+    <button [disabled]="!isChanged" (click)="onRevert()">Revert</button>
+    <button [disabled]="!isChanged" (click)="onUpdate()">Save</button>
+</div>
+</div>
+

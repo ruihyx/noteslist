@@ -1,0 +1,14 @@
+<!-- <p>list works!</p> -->
+<div class="list'">
+<header class="container">
+    <h4>Notes</h4>
+    <button class='add' (click)="onAddNote()">+</button>
+</header>
+<div>
+    <div class='container' *ngFor="let note of notes; index as i">
+        <a name='title' (click)="onSelectNote(i)">{{note.title}}</a>
+        <button class='delete' (click)="onDeletedNote(i)">Delete</button>
+    </div>
+</div>
+
+</div>

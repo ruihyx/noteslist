@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-direction:  row;
+    height: 100vh;
+
+}
+
+app-list{
+    flex:1;
+    background-color: antiquewhite;
+    // border-right: 1px solid rosybrown;
+    
+}
+
+app-note{
+    flex:1
+}
+.divider {
+    width: 1px;
+    background-color: #ccc;
+    margin: 0 px;
+  }
